@@ -64,7 +64,7 @@ Manual install is only required if you are not using the premade images, and are
 
 ``` bash
 sudo apt -y update
-sudo apt -y install nodejs jq rustc cargo php-cli
+sudo apt -y install nodejs npm jq rustc cargo php-cli
 cargo install miniserve
 ```
 
@@ -116,6 +116,8 @@ pip3 install gpsd-py3
 ```bash
 cd ~/krakensdr
 git clone https://github.com/krakenrf/krakensdr_doa
+cd krakensdr_doa
+npm i
 ```
 
 Copy the the `krakensdr_doa/util/kraken_doa_start.sh` and the `krakensdr_doa/util/kraken_doa_stop.sh` scripts into the krakensdr root folder of the project.
