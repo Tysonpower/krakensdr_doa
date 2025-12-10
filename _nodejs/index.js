@@ -102,7 +102,7 @@ function websocketPing (){
 }
 
 function websocketConnect (){
-  wsClient = new ws(remoteServer);
+  wsClient = new ws(remoteServer, {rejectUnauthorized: false});
 
   wsClient.onopen = () => {
     // start ping interval
